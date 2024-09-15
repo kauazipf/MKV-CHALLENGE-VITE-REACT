@@ -1,0 +1,38 @@
+.banner {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner img {
+    max-width: 99vw;
+    height: 250px; 
+  }
+
+  #contentIndex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    max-width: 100%;
+    margin: 2% auto;
+    padding: 5% 10%;
+    gap: 15px;
+  }
+
+ .texto{
+    margin: 2% auto;
+    width: 50%;
+    text-align: justify;
+    font-size: 25px;
+  }
+
+.imgPorto {
+    width: 50%;
+    height: auto;
+    margin: 2% 25%;
+  }

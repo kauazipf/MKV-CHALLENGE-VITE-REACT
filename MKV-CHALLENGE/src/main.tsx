@@ -4,6 +4,7 @@ import App from './App.tsx'
 import Carros from "./routes/Carros/index.tsx";
 import Chatbot from './routes/Chatbot/index.tsx';
 import Error from './routes/Error/index.tsx';
+import Home from './routes/Home/index.tsx'
 import Login from './routes/Login/index.tsx';
 import Participantes from './routes/Participantes/index.tsx';
 import Servicos from './routes/Servicos/index.tsx';
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <Error/>,
     children: [
+      {
+        path: "/",
+        element: <Home />
+      },
       {
         path: "/Carros",
         element: <Carros/>
@@ -41,7 +46,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
     <RouterProvider router={router} />
   </StrictMode>,
 )

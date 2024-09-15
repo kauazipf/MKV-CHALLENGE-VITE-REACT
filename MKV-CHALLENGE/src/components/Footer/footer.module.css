@@ -1,0 +1,43 @@
+.footer {    
+    flex-shrink: 0;
+    background-color: #0A0081;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0; 
+    width: 100%;
+  }
+
+  .footer .txtLink {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  .footer .txtLink:hover {
+    text-decoration: underline;
+  }
+
+  .footer p {
+    margin: 7px 0;
+  }
+
+  .footer img{
+    width: 40px;
+    margin: 0 10px;
+  }
+
+  .linksRodape{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  
