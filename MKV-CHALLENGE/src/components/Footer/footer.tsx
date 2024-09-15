@@ -9,7 +9,7 @@ export default function Footer(){
             <nav role="navigation" className={style.linksRodape}>
                 <ul>
                    <li className={style.link}> <a href="mailto:mktltda3@gmail.com" target='_blank'> <img src={logoGmail} alt="Icone do Gmail" /> </a> </li> 
-                   <li className={style.link}> <a href="https://github.com/kauazipf" target='_blank'> <img src={logoGithub} alt="Icone do GitHub" /> </a> </li>
+                   <li className={style.link}> <a href="https://github.com/kauazipf/MKV-CHALLENGE-VITE-REACT" target='_blank'> <img src={logoGithub} alt="Icone do GitHub" /> </a> </li>
                 </ul>
             </nav>
 
