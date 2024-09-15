@@ -33,3 +33,30 @@ body{
 .header .right-icon {
     right: 20px;
 }
+
+.menu {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background-color: #0A0081;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.menu .link {
+    font-size: 1.2vw;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-align: left;
+    font-weight: bold;
+    color: #fff;
+}
+
+.menu .link:hover {
+    background-color: #fff;
+    color: #0A0081;
+  }
+
+
+
