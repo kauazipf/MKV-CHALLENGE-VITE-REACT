@@ -1,0 +1,28 @@
+.subTitle {
+  width: 100%;
+  background-color: #E2E2E2;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.subTitle h1 {
+  font-family: Monda;
+  font-size: 45px;
+  margin: 0 auto;
+}
+
+.servicesContainer {
+    text-align: center;
+    margin: 10% auto;
+  }
+
+.service {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 15px;
+    width: 300px;
+    display: inline-block;
+  }
