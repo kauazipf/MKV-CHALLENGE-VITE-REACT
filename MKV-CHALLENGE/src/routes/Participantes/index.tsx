@@ -17,7 +17,7 @@ export default function Participantes(){
                         rm="RM-558957"
                         turma="1TDSPG"
                         github="https://github.com/kauazipf"
-                        foto="..\src\image\.png"
+                        foto="./../../image/fotoKaua.png"
                     />
                 </div>
 
@@ -27,7 +27,7 @@ export default function Participantes(){
                         rm="RM-558254"
                         turma="1TDSPG"
                         github="https://github.com/marcelooou"
-                        foto="..\src\image\.png"
+                        foto="./../../image/fotoMarcelo.png"
                     />
                 </div>
 
@@ -37,7 +37,7 @@ export default function Participantes(){
                         rm="RM-556653"
                         turma="1TDSPG"
                         github="https://github.com/Vitin46"
-                        foto="..\src\image\.png"
+                        foto="./../../image/fotoVictor.png"
                     />
                 </div>
                 
