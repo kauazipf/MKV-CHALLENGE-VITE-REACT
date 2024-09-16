@@ -9,3 +9,11 @@ index-content{
     flex-direction: column;
     min-height: 100vh;
 }
+
+/* Estilos para desktop */
+@media (min-width: 1024px) {
+    main {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}

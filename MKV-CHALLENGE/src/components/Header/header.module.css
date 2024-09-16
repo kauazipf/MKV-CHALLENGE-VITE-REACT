@@ -58,5 +58,63 @@ body{
     color: #0A0081;
   }
 
+  /* Estilos para desktop */
+@media (min-width: 1024px) {
+    .header .logo {
+        width: 15vw;
+    }
+    
+    .header .icon {
+        width: 7vw;
+    }
+    
+    .menu .link {
+        font-size: 2.3vw;
+        padding: 18px;
+    }
+}
+
+  /* Estilos para tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+    .header .logo {
+        width: 10vw;
+    }
+    
+    .header .icon {
+        width: 6vw;
+    }
+    
+    .menu .link {
+        font-size: 2vw;
+        padding: 15px;
+    }
+}
+
+/* Estilos para celular */
+@media (max-width: 767px) {
+    .header{
+        padding: 20px;
+    }
+    
+    .header .logo {
+        border-radius: 50px;
+        width: 60px;
+    }
+
+    .header .icon{
+        width: 35px;
+    }
+    
+    .menu {
+        padding: 15px;
+      }
+    
+    .menu .link {
+        font-size: 2.5vw;
+        padding: 15px;
+    }
+}
+
 
 

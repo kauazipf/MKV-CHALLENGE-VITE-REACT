@@ -10,7 +10,7 @@
 
   .banner img {
     max-width: 99vw;
-    height: 250px; 
+    height: 33vh; 
   }
 
   #contentIndex {
@@ -26,13 +26,69 @@
 
  .texto{
     margin: 2% auto;
-    width: 50%;
+    width: 70%;
     text-align: justify;
-    font-size: 25px;
+    font-size: 1.7vw;
   }
 
 .imgPorto {
-    width: 50%;
+    width: 70%;
     height: auto;
-    margin: 2% 25%;
+    margin: 2% 15%;
   }
+
+  /* Estilos para desktop */
+@media (min-width: 1024px) {
+  .banner img {
+    max-width: 99vw;
+    height: 25vh; 
+  }
+
+ .texto{
+    margin: 2% auto;
+    width: 70%;
+    font-size: 2.5vw;
+  }
+}
+
+/* Estilos para tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .banner img {
+    max-width: 99vw;
+    height: 25vh; 
+  }
+
+ .texto{
+    margin: 2% auto;
+    width: 70%;
+    font-size: 2vw;
+  }
+}
+
+/* Estilos para celular */
+@media (max-width: 767px) {
+  .banner img {
+    max-width: 99vw;
+    height: 20vh; 
+  }
+
+  #contentIndex {
+    margin-top: 20px;
+    max-width: 100%;
+    margin: 2% auto;
+    padding: 5% 10%;
+    gap: 15px;
+  }
+
+ .texto{
+    margin: 2% auto;
+    width: 70%;
+    font-size: 2.5vw;
+  }
+
+.imgPorto {
+    width: 70%;
+    height: auto;
+    margin: 2% 15%;
+  }
+}
