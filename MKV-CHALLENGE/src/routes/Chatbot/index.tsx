@@ -1,7 +1,7 @@
 import style from './index.module.css'
 
 export default function Chatbot(){
-
+    document.title = "Chatbot"
 
     return(
         <>

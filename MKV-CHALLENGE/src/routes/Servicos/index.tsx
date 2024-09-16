@@ -1,6 +1,8 @@
 import style from './index.module.css'
 
 export default function Servicos(){
+    document.title = "Serviços"
+
     return(
         <>
             <div className={style.subTitle}>

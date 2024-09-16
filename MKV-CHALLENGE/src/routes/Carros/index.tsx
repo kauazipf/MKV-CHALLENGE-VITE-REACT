@@ -5,6 +5,8 @@ import fotoUno from './../../image/fotoUno.png'
 import fotoFiesta from './../../image/fotoFiesta.png'
 
 export default function dadosCarros(){
+    document.title = "Carros"
+
     return(
         <>
             <div className={style.subTitle}>

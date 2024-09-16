@@ -4,6 +4,8 @@ import { useState } from 'react';
 import style from './index.module.css'
 
 export default function Login(){
+    document.title = "Login"
+
     const [isSignup, setIsSignup] = useState(false);
 
     const handleLogin = (email: string, password: string) => {
@@ -19,11 +21,15 @@ export default function Login(){
     const switchToSignup = () => {
       setIsSignup(true);
     };
+
+    const switchToLogin = () => {
+      setIsSignup(false);
+    };
   
     return (
       <div className={style.login}>
         {isSignup ? (
-          <SignupForm onSignup={handleSignup} />
+          <SignupForm onSignup={handleSignup} onSwitchToLogin={switchToLogin}/>
         ) : (
           <LoginForm onLogin={handleLogin} onSwitchToSignup={switchToSignup} />
         )}

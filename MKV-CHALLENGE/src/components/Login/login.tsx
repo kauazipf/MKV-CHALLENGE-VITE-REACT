@@ -1,6 +1,6 @@
 // src/components/LoginForm.tsx
 import React, { useState } from 'react';
-import './login.css';
+import style from './login.module.css';
 
 interface LoginFormProps {
   onLogin: (email: string, password: string) => void;
@@ -17,32 +17,32 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin, onSwitchToSignup }) => {
   };
 
   return (
-    <div className="login-form-container">
-      <h2 className="login-form-header">Entrar</h2>
-      <form onSubmit={handleSubmit} className="login-form">
-        <label className="login-form-label">
+    <div className={style.loginFormContainer}>
+      <h2 className={style.loginFormHeader}>Entrar</h2>
+      <form onSubmit={handleSubmit} className={style.loginForm}>
+        <label className={style.loginFormLabel}>
           Email:
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="login-form-input"
+            className={style.loginFormInput}
           />
         </label>
-        <label className="login-form-label">
+        <label className={style.loginFormLabel}>
           Senha:
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-            className="login-form-input"
+            className={style.loginFormInput}
           />
         </label>
-        <button type="submit" className="login-form-button">Entrar</button>
+        <button type="submit" className={style.loginFormButton}>Entrar</button>
       </form>
-      <button onClick={onSwitchToSignup} className="login-form-switch-button">Criar uma conta</button>
+      <button onClick={onSwitchToSignup} className={style.loginFormSwitchButton}>Criar uma conta</button>
     </div>
   );
 };

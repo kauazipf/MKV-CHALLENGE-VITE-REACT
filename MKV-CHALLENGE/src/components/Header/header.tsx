@@ -19,11 +19,11 @@ export default function Header(){
 
     return(
         <header className={style.header}>
-            <img src={imgMenu} alt="Ícone Menu" className={style.icon} width={70} style={{left:20}} onClick={toggleMenu}/>
+            <img src={imgMenu} alt="Ícone Menu" className={style.icon} width={50} style={{left:20}} onClick={toggleMenu}/>
 
             <img src={logo} alt="Logo" className={style.logo} width={120}/>
 
-            <Link to={'/Login'}> <img src={imgLogin} alt="Ícone Login" className={style.icon} width={70} style={{right:20}}/> </Link>
+            <Link to={'/Login'}> <img src={imgLogin} alt="Ícone Login" className={style.icon} width={50} style={{right:20}}/> </Link>
 
             <div className={style.menu} id="menu"  style={menuStyle}>
                 <Link to='/' className={style.link}> Home </Link>

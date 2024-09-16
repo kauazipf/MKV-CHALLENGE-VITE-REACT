@@ -1,12 +1,13 @@
 // src/components/SignupForm.tsx
 import React, { useState } from 'react';
-import './cadastrar.css';
+import style from './cadastrar.module.css';
 
 interface SignupFormProps {
   onSignup: (email: string, password: string) => void;
+  onSwitchToLogin: () => void;
 }
 
-const SignupForm: React.FC<SignupFormProps> = ({ onSignup }) => {
+const SignupForm: React.FC<SignupFormProps> = ({ onSignup, onSwitchToLogin }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -16,31 +17,32 @@ const SignupForm: React.FC<SignupFormProps> = ({ onSignup }) => {
   };
 
   return (
-    <div className="signup-form-container">
-      <h2 className="signup-form-header">Cadastrar</h2>
-      <form onSubmit={handleSubmit} className="signup-form">
-        <label className="signup-form-label">
+    <div className={style.signupFormContainer}>
+      <h2 className={style.signupFormHeader}>Cadastrar</h2>
+      <form onSubmit={handleSubmit} className={style.signupForm}>
+        <label className={style.signupFormLabel}>
           Email:
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="signup-form-input"
+            className={style.signupFormInput}
           />
         </label>
-        <label className="signup-form-label">
+        <label className={style.signupFormLabel}>
           Senha:
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-            className="signup-form-input"
+            className={style.signupFormInput}
           />
         </label>
-        <button type="submit" className="signup-form-button">Cadastrar</button>
+        <button type="submit" className={style.signupFormButton}>Cadastrar</button>
       </form>
+      <button onClick={onSwitchToLogin} className={style.signupFormSwitchButton}>Logar</button> 
     </div>
   );
 };
