@@ -1,5 +1,8 @@
-import Participante from "../../components/Participantes/participantes"
+import Participante from "./../../components/Participantes/participantes"
 import style from './index.module.css'
+import fotoKaua from './../../image/fotoKaua.png'
+import fotoMarcelo from './../../image/fotoMarcelo.png'
+import fotoVictor from './../../image/fotoVictor.png'
 
 export default function Participantes(){
     document.title = "Participantes"
@@ -17,17 +20,17 @@ export default function Participantes(){
                         rm="RM-558957"
                         turma="1TDSPG"
                         github="https://github.com/kauazipf"
-                        foto="./../../image/fotoKaua.png"
+                        foto={fotoKaua}
                     />
                 </div>
-
+                
                 <div className={style.participante}>
                     <Participante
                         nome="Marcelo Siqueira Bonfim"
                         rm="RM-558254"
                         turma="1TDSPG"
                         github="https://github.com/marcelooou"
-                        foto="./../../image/fotoMarcelo.png"
+                        foto={fotoMarcelo}
                     />
                 </div>
 
@@ -37,14 +40,15 @@ export default function Participantes(){
                         rm="RM-556653"
                         turma="1TDSPG"
                         github="https://github.com/Vitin46"
-                        foto="./../../image/fotoVictor.png"
+                        foto={fotoVictor}
                     />
                 </div>
                 
             </div>
 
             <div className={style.linkGithub}>
-                <a href="https://github.com/kauazipf/MKV-CHALLENGE-VITE-REACT" target="_blank">Repositório Github</a>
+                <a href="https://github.com/kauazipf/MKV-CHALLENGE-VITE-REACT" 
+                target="_blank">Repositório Github</a>
             </div>
         </>
     )

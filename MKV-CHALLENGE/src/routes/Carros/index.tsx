@@ -1,5 +1,8 @@
 import Carros from "../../components/Carros/carros"
 import style from './index.module.css'
+import fotoCelta from './../../image/fotoCelta.png'
+import fotoUno from './../../image/fotoUno.png'
+import fotoFiesta from './../../image/fotoFiesta.png'
 
 export default function dadosCarros(){
     return(
@@ -15,7 +18,7 @@ export default function dadosCarros(){
                         marca="Chevrolet"
                         cor="Preto"
                         ano="2014"
-                        foto="./../../image/fotoCelta.png"
+                        foto={fotoCelta}
                     />
                 </div>
 
@@ -25,7 +28,7 @@ export default function dadosCarros(){
                         marca="Fiat"
                         cor="Roxo"
                         ano="1998"
-                        foto="./../../image/fotoUno.png"
+                        foto={fotoUno}
                     />
                 </div>
 
@@ -35,7 +38,7 @@ export default function dadosCarros(){
                         marca="Ford"
                         cor="Prata"
                         ano="2011"
-                        foto="./../../image/fotoFiesta.png"
+                        foto={fotoFiesta}
                     />
                 </div>
                 
