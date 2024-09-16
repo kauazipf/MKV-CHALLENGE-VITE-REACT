@@ -1,0 +1,33 @@
+.subTitle {
+    width: 100%;
+    background-color: #E2E2E2;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+  }
+
+  .subTitle h1 {
+    font-family: Monda;
+    font-size: 45px;
+    margin: 0 auto;
+  }
+
+.containerCarros {
+    max-width: 1200px;
+    margin: 5% auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carro {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  
